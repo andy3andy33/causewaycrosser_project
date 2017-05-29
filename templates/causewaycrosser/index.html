@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+		<head>
+				<title>Causeway Crosser</title>
+		</head>
+		<body>
+				<h1>Causeway Crosser</h1>
+				<div>{{message}}</div></br>
+				<div>
+					{% for image in some_images %}
+						<img src="{{ image }}", alt="image"> </br>
+					{% endfor %}
+				</div>
+		</body>
+
+</html>
